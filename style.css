@@ -29,6 +29,7 @@ body {
     background-color: var(--dark-color);
     color: var(--text-color);
     overflow-x: hidden;
+    overflow-y: auto !important;
 }
 
 .container {
@@ -631,7 +632,10 @@ footer {
 .loader.fade-out {
     opacity: 0;
     visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.6s ease, visibility 0.6s;
 }
+
 
 .loader-content {
     display: flex;

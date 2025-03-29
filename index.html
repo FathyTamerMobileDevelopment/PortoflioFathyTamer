@@ -652,6 +652,66 @@
         init();
     }
 })();
+
+// Direct Mobile Navigation Fix
+(function() {
+    // Run immediately when script loads
+    console.log("Mobile nav fix loading");
+    
+    // Function to initialize mobile navigation
+    function initMobileNav() {
+        // Get elements
+        var menuToggle = document.querySelector('.menu-toggle');
+        var mobileNav = document.querySelector('.mobile-nav');
+        
+        // Check if elements exist
+        if (!menuToggle || !mobileNav) {
+            console.error("Menu toggle or mobile nav not found");
+            return;
+        }
+        
+        console.log("Mobile nav elements found");
+        
+        // Toggle menu when clicking the hamburger icon
+        menuToggle.addEventListener('click', function(e) {
+            e.preventDefault();
+            console.log("Menu toggle clicked");
+            
+            // Toggle active class on menu button
+            menuToggle.classList.toggle('active');
+            
+            // Toggle active class on mobile nav
+            mobileNav.classList.toggle('active');
+            
+            // Toggle body scroll
+            if (mobileNav.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        });
+        
+        // Close menu when clicking a link
+        var mobileLinks = document.querySelectorAll('.mobile-nav-links a');
+        mobileLinks.forEach(function(link) {
+            link.addEventListener('click', function() {
+                menuToggle.classList.remove('active');
+                mobileNav.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+        
+        console.log("Mobile nav initialized successfully");
+    }
+    
+    // Initialize when DOM is ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initMobileNav);
+    } else {
+        // DOM is already loaded
+        initMobileNav();
+    }
+})();
     </script>
 </body>
 </html>

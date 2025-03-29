@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loader">
+        <div class="loader-content">
+            <div class="loader-spinner"></div>
+            <div class="loader-text">Loading...</div>
+        </div>
+    </div>
+
+    <nav id="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">Portfolio</a>
+            <div class="nav-right">
+                <!-- Mobile Menu Toggle -->
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#social">Social</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <a href="/cv/Fathy-Tamer-FlowCV-Resume-20250329.pdf" download class="cv-button">
+                    <i class="fas fa-download"></i> Download CV
+                </a>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div class="mobile-nav">
+            <ul class="mobile-nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#social">Social</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a href="path/to/your-cv.pdf" download class="cv-button mobile-cv-button">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Header Section -->
+    <header id="home">
+        <div class="animated-background">
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+            <div class="cube"></div>
+        </div>
+        
+        <div class="container hero-content">
+            <div class="hero-text">
+                <div class="text-reveal">
+                    <h1>Hello, I'm 
+                        <br>
+                        <span class="highlight">Fathy Tamer</span></h1>
+                </div>
+                <div class="creative-subtitle">
+                    <div class="subtitle-container">
+                        <h2 class="subtitle">UI/UX Designer</h2>
+                        <h2 class="subtitle">Android Developer</h2>
+                        <h2 class="subtitle">Problem Solver</h2>
+                        <h2 class="subtitle">Creative Thinker</h2>
+                    </div>
+                </div>
+                <p class="hero-description">I create stunning digital experiences with a focus on user-centered design and innovative mobile solutions.</p>
+                
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary">Contact Me</a>
+                    <a href="#services" class="btn btn-secondary">My Services</a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <!-- For mobile, the tech stack layout is changed to grid -->
+                <div class="tech-stack">
+                    <div class="tech-item" data-tech="UI"><i class="fas fa-paint-brush"></i></div>
+                    <div class="tech-item" data-tech="UX"><i class="fas fa-users"></i></div>
+                    <div class="tech-item" data-tech="Android"><i class="fab fa-android"></i></div>
+                    <div class="tech-item" data-tech="Kotlin"><i class="fas fa-code"></i></div>
+                    <div class="tech-item" data-tech="Java"><i class="fab fa-java"></i></div>
+                    <div class="tech-item" data-tech="Design"><i class="fas fa-pencil-ruler"></i></div>
+                </div>
+                <div class="animated-shape">
+                    <svg viewBox="0 0 500 500" width="100%" height="100%">
+                        <path class="blob" d="M452.9,293.8c17.3,56.7-22.3,129.8-81.7,165.6c-59.5,35.8-138.9,34.4-202.5-0.4C105.2,423.9,57.4,355.7,40.8,285.1
+                        c-16.7-70.6-2.1-143.7,44.4-185.7c46.5-42,124.9-53,190.4-31.9c65.6,21.1,118.4,74.3,142.3,132.7C442,258.5,435.6,237.1,452.9,293.8z">
+                        </path>
+                        <clipPath id="shape-mask">
+                            <path d="M452.9,293.8c17.3,56.7-22.3,129.8-81.7,165.6c-59.5,35.8-138.9,34.4-202.5-0.4C105.2,423.9,57.4,355.7,40.8,285.1
+                            c-16.7-70.6-2.1-143.7,44.4-185.7c46.5-42,124.9-53,190.4-31.9c65.6,21.1,118.4,74.3,142.3,132.7C442,258.5,435.6,237.1,452.9,293.8z">
+                            </path>
+                        </clipPath>
+                    </svg>
+                    <div class="image-collage" style="clip-path: url(#shape-mask);">
+                        <!-- Replace these with your actual project images -->
+                        <div class="collage-img" style="background-image: url('/api/placeholder/200/200');"></div>
+                        <div class="collage-img" style="background-image: url('/api/placeholder/200/200');"></div>
+                        <div class="collage-img" style="background-image: url('/api/placeholder/200/200');"></div>
+                        <div class="collage-img" style="background-image: url('/api/placeholder/200/200');"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+                <div class="line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-img ">
+                    <img src="/images/projects/fathytamer.png" alt="About Me">
+                    <!-- Replace the placeholder with your about image -->
+                    <!-- <img src="images/about.jpg" alt="About Me"> -->
+                </div>
+                <div class="about-text hidden">
+                    <h3>Let me introduce myself</h3>
+                    <p>I'm a passionate UI/UX Designer and Android Developer with over 5 years of experience creating beautiful and functional digital products. I believe in combining aesthetic design with practical functionality to deliver exceptional user experiences.</p>
+                    <p>With expertise in both design and development, I offer a unique perspective that bridges the gap between creative vision and technical implementation.</p>
+                    <div class="skills">
+                        <div class="skill">UI Design</div>
+                        <div class="skill">UX Research</div>
+                        <div class="skill">Wireframing</div>
+                        <div class="skill">Prototyping</div>
+                        <div class="skill">Android</div>
+                        <div class="skill">Kotlin</div>
+                        <div class="skill">Java</div>
+                        <div class="skill">Material Design</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Animated Work Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Work Experience</h2>
+                <div class="line"></div>
+            </div>
+            
+            <div class="experience-wrapper">
+                <!-- Current/Most Recent Role -->
+                <div class="exp-card">
+                    <div class="exp-year">
+                        <span>2023</span>
+                        <span>Present</span>
+                    </div>
+                    <div class="exp-content">
+                        <div class="exp-logo">
+                            <!-- Replace with actual company logo -->
+                            <img src="/images/1701001336857.jpeg" alt="Current Company">
+                        </div>
+                        <h3 class="exp-title">UI/UX Expert</h3>
+                        <h4 class="exp-company">Company Name</h4>
+                        <p class="exp-description">
+                            Leading the design team in creating intuitive and engaging user experiences. 
+                            Responsible for user research, prototyping, and implementing design systems 
+                            that align with the company's brand and vision.
+                        </p>
+                        <div class="exp-skills">
+                            <span>UI Design</span>
+                            <span>UX Research</span>
+                            <span>Prototyping</span>
+                            <span>User Testing</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Previous Role -->
+                <div class="exp-card">
+                    <div class="exp-year">
+                        <span>2021</span>
+                        <span>2023</span>
+                    </div>
+                    <div class="exp-content">
+                        <div class="exp-logo">
+                            <!-- Replace with actual company logo -->
+                            <img src="/images/1701001336857.jpeg" alt="Previous Company">
+                        </div>
+                        <h3 class="exp-title">Android Developer</h3>
+                        <h4 class="exp-company">Previous Company</h4>
+                        <p class="exp-description">
+                            Developed and maintained Android applications with a focus on performance and user experience.
+                            Collaborated with the design team to implement responsive UI components and 
+                            ensured smooth functionality across different Android devices.
+                        </p>
+                        <div class="exp-skills">
+                            <span>Kotlin</span>
+                            <span>Java</span>
+                            <span>Material Design</span>
+                            <span>MVVM</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Earlier Role -->
+                <div class="exp-card">
+                    <div class="exp-year">
+                        <span>2019</span>
+                        <span>2021</span>
+                    </div>
+                    <div class="exp-content">
+                        <div class="exp-logo">
+                            <!-- Replace with actual company logo -->
+                            <img src="/images/1701001336857.jpeg" alt="Earlier Company">
+                        </div>
+                        <h3 class="exp-title">UI/UX Designer</h3>
+                        <h4 class="exp-company">Earlier Company</h4>
+                        <p class="exp-description">
+                            Created user interfaces for web and mobile applications. Conducted user research
+                            and usability testing to improve product design and user satisfaction.
+                            Collaborated closely with developers to ensure design implementation.
+                        </p>
+                        <div class="exp-skills">
+                            <span>Wireframing</span>
+                            <span>User Flows</span>
+                            <span>Visual Design</span>
+                            <span>Prototyping</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Services</h2>
+                <div class="line"></div>
+            </div>
+            <div class="services-container">
+                <div class="service-card hidden">
+                    <div class="service-icon">
+                        <i class="fas fa-paint-brush"></i>
+                    </div>
+                    <h3 class="service-title">UI/UX Design</h3>
+                    <p class="service-description">I create intuitive and visually appealing user interfaces that enhance user experience and engagement.</p>
+                    <a href="#" class="service-link show-projects" data-target="uiux-projects">View Projects <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card hidden">
+                    <div class="service-icon">
+                        <i class="fab fa-android"></i>
+                    </div>
+                    <h3 class="service-title">Android Development</h3>
+                    <p class="service-description">I build high-quality Android applications using Kotlin and Java, focusing on performance and usability.</p>
+                    <a href="#" class="service-link show-projects" data-target="android-projects">View Projects <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            
+            <!-- UI/UX Projects -->
+            <div id="uiux-projects" class="projects-container">
+                <!-- UIUX PROJECT 1: Replace image, title, and description with your own project -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="/api/placeholder/400/300" alt="Project 1">
+                        <!-- <img src="images/projects/uiux-project1.jpg" alt="Project 1"> -->
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">E-commerce Redesign</h3>
+                        <div class="project-category">UI/UX Design</div>
+                        <p class="project-description">A complete redesign of an e-commerce platform with a focus on improving conversion rates and user engagement.</p>
+                        <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- UIUX PROJECT 2: Replace image, title, and description with your own project -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="/api/placeholder/400/300" alt="Project 2">
+                        <!-- <img src="images/projects/uiux-project2.jpg" alt="Project 2"> -->
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Finance App Design</h3>
+                        <div class="project-category">UI/UX Design</div>
+                        <p class="project-description">A modern financial application design with intuitive data visualization and user-friendly interface.</p>
+                        <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- UIUX PROJECT 3: Replace image, title, and description with your own project -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="/api/placeholder/400/300" alt="Project 3">
+                        <!-- <img src="images/projects/uiux-project3.jpg" alt="Project 3"> -->
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Travel Platform</h3>
+                        <div class="project-category">UI/UX Design</div>
+                        <p class="project-description">A comprehensive travel booking platform design that simplifies the trip planning and booking process.</p>
+                        <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Android Projects -->
+            <div id="android-projects" class="projects-container">
+                <!-- ANDROID PROJECT 1: Replace image, title, and description with your own project -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="/api/placeholder/400/300" alt="Android Project 1">
+                        <!-- <img src="images/projects/android-project1.jpg" alt="Android Project 1"> -->
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Fitness Tracker App</h3>
+                        <div class="project-category">Android Development</div>
+                        <p class="project-description">A comprehensive fitness tracking application built with Kotlin that helps users monitor their workouts and health goals.</p>
+                        <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- ANDROID PROJECT 2: Replace image, title, and description with your own project -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="/api/placeholder/400/300" alt="Android Project 2">
+                        <!-- <img src="images/projects/android-project2.jpg" alt="Android Project 2"> -->
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Food Delivery App</h3>
+                        <div class="project-category">Android Development</div>
+                        <p class="project-description">A feature-rich food delivery application developed with Java that connects users with local restaurants.</p>
+                        <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <!-- ANDROID PROJECT 3: Replace image, title, and description with your own project -->
+                <div class="project-card">
+                    <div class="project-img">
+                        <img src="/api/placeholder/400/300" alt="Android Project 3">
+                        <!-- <img src="images/projects/android-project3.jpg" alt="Android Project 3"> -->
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Smart Home Controller</h3>
+                        <div class="project-category">Android Development</div>
+                        <p class="project-description">An IoT smart home control app built with Kotlin that allows users to manage their connected devices.</p>
+                        <a href="#" class="project-link">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section id="social" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Follow Me</h2>
+                <div class="line"></div>
+            </div>
+            <div class="social-container hidden">
+                <a href="https://www.behance.net/fathhhhy" class="social-link dribbble">
+                    <i class="fab fa-behance"></i>
+                </a>
+                <a href="https://github.com/FathyTamerMobileDevelopment" class="social-link github">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/fathytamerfathy223/" class="social-link linkedin">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="https://www.instagram.com/fathhhhhhy/" class="social-link instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Get In Touch</h2>
+                <div class="line"></div>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info hidden">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Location</h4>
+                            <p>AL Ma'adi , Cairo</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <p>fathytameruix@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Phone</h4>
+                            <p>+20 101 081 1806</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form hidden">
+                    <form id="contactForm" action="https://formspree.io/f/fathytameruix@gmail.com" method="POST">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-logo">Portfolio</div>
+            <p class="footer-text">&copy; 2025 FathyTamer. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

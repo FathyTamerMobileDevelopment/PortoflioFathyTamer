@@ -405,6 +405,96 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// Modern Navigation JavaScript
+document.addEventListener('DOMContentLoaded', function() {
+    // Elements
+    const navbar = document.getElementById('navbar');
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mobileNav = document.querySelector('.mobile-nav');
+    const navLinks = document.querySelectorAll('.nav-link');
+    const mobileNavLinks = document.querySelectorAll('.mobile-nav-links a');
+    const sections = document.querySelectorAll('section');
+    
+    // Handle scroll events
+    window.addEventListener('scroll', function() {
+        // Add 'scrolled' class when scrolled down
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+        
+        // Highlight active section in navigation
+        highlightActiveSection();
+    });
+    
+    // Mobile menu toggle
+    if (menuToggle && mobileNav) {
+        menuToggle.addEventListener('click', function() {
+            this.classList.toggle('active');
+            mobileNav.classList.toggle('active');
+            
+            // Prevent body scrolling when menu is open
+            document.body.style.overflow = mobileNav.classList.contains('active') ? 'hidden' : '';
+        });
+    }
+    
+    // Close mobile menu when clicking a link
+    mobileNavLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            menuToggle.classList.remove('active');
+            mobileNav.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+    });
+    
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                const navbarHeight = navbar.offsetHeight;
+                const targetPosition = targetElement.offsetTop - navbarHeight;
+                
+                window.scrollTo({
+                    top: targetPosition,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+    
+    // Highlight active section in navigation
+    function highlightActiveSection() {
+        let currentSection = '';
+        
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            const sectionHeight = section.offsetHeight;
+            const navbarHeight = navbar.offsetHeight;
+            
+            if (window.scrollY >= (sectionTop - navbarHeight - 100)) {
+                currentSection = section.getAttribute('id');
+            }
+        });
+        
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${currentSection}`) {
+                link.classList.add('active');
+            }
+        });
+    }
+    
+    // Run on page load to set initial active state
+    highlightActiveSection();
+});
+
 // Initialize mobile navigation when DOM is loaded
 document.addEventListener('DOMContentLoaded', initMobileNav);
 

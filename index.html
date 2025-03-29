@@ -17,47 +17,53 @@
         </div>
     </div>
 
-    <nav id="navbar">
+    <!-- Modern Navigation Bar -->
+    <nav id="navbar" class="modern-nav">
         <div class="container nav-container">
             <a href="#" class="logo">
-                <img src="/images/Container.png" style="height: 65px; width: 190px;">
+                <span class="logo-text">Fathy Tamer</span>
+                <span class="logo-dot"></span>
             </a>
+            
             <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#experience" class="nav-link">Experience</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#social" class="nav-link">Social</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                
+                <a href="path/to/your-cv.pdf" download class="cv-button">
+                    <span class="cv-text">Download CV</span>
+                    <span class="cv-icon"><i class="fas fa-download"></i></span>
+                </a>
+                
                 <!-- Mobile Menu Toggle -->
                 <div class="menu-toggle">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+                    <div class="menu-bar"></div>
                 </div>
-                
-                <!-- Desktop Navigation -->
-                <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#social">Social</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <a href="/cv/Fathy-Tamer-FlowCV-Resume-20250329.pdf" download class="cv-button">
-                    <i class="fas fa-download"></i> Download CV
-                </a>
             </div>
         </div>
         
         <!-- Mobile Navigation -->
         <div class="mobile-nav">
-            <ul class="mobile-nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#social">Social</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li>
-                    <a href="path/to/your-cv.pdf" download class="cv-button mobile-cv-button">
-                        <i class="fas fa-download"></i> Download CV
-                    </a>
-                </li>
-            </ul>
+            <div class="mobile-nav-container">
+                <ul class="mobile-nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#social">Social</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="mobile-cv-item">
+                        <a href="path/to/your-cv.pdf" download class="mobile-cv-button">
+                            <i class="fas fa-download"></i> Download CV
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
     <!-- Header Section -->
